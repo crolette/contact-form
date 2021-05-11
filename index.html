@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Défi - Contact</title>
+
+</head>
+<body class="container__flex-col">
+
+  <div class="container">
+    <div class="title container__flex-col">
+      <h1>Navigator</h1>
+      <ul class="tabs">
+        <li class="tab">
+            <ion-icon name="airplane-outline"></ion-icon>
+        </li>
+        <li class="tab">
+            <ion-icon name="boat-outline"></ion-icon>
+        </li>
+        <li class="tab">
+            <ion-icon name="car-sport-outline"></ion-icon>
+        </li>
+        <li class="tab">
+            <ion-icon name="bicycle-outline"></ion-icon>
+        </li>
+        <li class="tab">
+            <ion-icon name="id-card-outline"></ion-icon>
+        </li>
+      </ul>
+      <p class="description">Ca y est ! L'application <span class="logo">Navigator</span> est disponible d'ici peu de temps. Impatient à l'idée de rejoindre votre chalet à Verbier en hélicoptère pour dévaler les pistes de ski, de trouver le chemin le plus rapide pour accéder à votre île paradisiaque près du Groenland ou encore de trouver sur quelles routes vous allez pouvoir à plus de 250km/h à bord de votre Ferrari? Alors inscrivez-vous! Nous vous contacterons dans les plus brefs délais pour discuter d'un esssai sur piste. </p>
+    </div>
+
+    <p class="try box-radius"><span>Essayez gratuitement pendant 7 jours</span></br>Payer ensuite un prix dérisoire de 2.500€/mois</p>
+
+    <form name="form" class="container__form container__flex-col box-radius" method="GET" action="./validation/validation.html" novalidate>
+      <div class="form__input">
+        <input type="text" title="prénom" aria-label="prénom" name="prénom" id="fname" placeholder="Prénom" autocomplete="given-name" minlength="2" maxlength="30">
+        <div class="form__error">
+          <p></p>
+        </div>
+      </div>
+      <div class="form__input">
+        <input type="text" title="nom de famille" aria-label="nom de famille" name="nom" id="lname" placeholder="Nom" autocomplete="family-name" minlength="2" maxlength="30">
+        <div class="form__error">
+          <p>/p>
+        </div>
+      </div>
+      <div class="form__input">
+        <select title="pays" aria-label="pays" name="pays" id="pays">
+          <option value="">Votre lieu de résidence principale</option>
+          <option value="france">France</option>
+          <option value="belgique">Belgique</option>
+          <option value="suisse">Suisse</option>
+          <option value="caiman">Îles Caïman</option>
+          <option value="non">Ca ne vous regarde pas</option>
+        </select>
+        <div class="form__error">
+          <p></p>
+        </div>
+      </div>
+      <div class="form__input">
+        <input type="email" title="adresse e-mail" aria-label="adresse e-mail" name="mail" id="email" placeholder="Adresse mail" autocomplete="email" minlength="6" >
+        <div class="form__error">
+          <p></p>
+        </div>
+      </div>
+      <div class="form__input">
+        <input type="tel" title="numéro de téléphone" aria-label="numéro de téléphone" name="tel" id="tel" placeholder="Numéro de téléphone : +33123456789" autocomplete="tel" minlength="6" >
+        <div class="form__error">
+          <p></p>
+        </div>
+      </div>
+      <input type="submit" title="Soumettre le formulaire" value="Demandez votre essai gratuit">
+    
+      <p class="disclaimer">En cliquant, vous acceptez d'être contacté par les plus grandes et luxueuses sociétés du monde <a href="">Conditions</a></p>
+    </form>
+  </div>
+  
+
+  <footer>
+    <p class="attribution">
+      Coded by <a href="https://www.crolweb.be">Crolweb</a>.
+    </p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
