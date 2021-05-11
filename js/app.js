@@ -6,11 +6,11 @@ const email = document.getElementById("email");
 const tel = document.getElementById("tel");
 const pays = document.getElementById("pays");
 const form = document.getElementsByName("form")[0];
-console.log(pays.value);
+
 
 /* Regular expressions pour les vérifications une fois que le formulaire est envoyé */
 const regexName =/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
-const regexTel = /[0-9]/;
+const regexTel = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 const regexMail = /(\w\.?)+@[\w\.-]+\.\w{2,}/;
 
 
